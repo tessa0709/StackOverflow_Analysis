@@ -1,2 +1,9 @@
 # StackOverflow_Analysis
 StackOverflow analysis
+Libraries used in analysis: csv, numpy, pandas, sklearn, matplotlib, seaborn
+Motivation: This analysis aims to answer several questions regarding how employers can attract and retain data talents. The data this analysis leverages is from StackOverflow Survey 2020. 
+Scope: In order to limite as many confounding factors as possible, I'm limiting this analysis to only participants who work in the US and have data related jobs (i.e. data analyst, data scientist, database administrtors)
+Findings: 
+1. Even though most of the data talents indicated that they are either "very satisfied" with their jobs or "slightly satisfied", most of them are still open to new opportunities. 
+2. However, there's an increase % of people indicating that they are "not interested in new opportunities" as satisfaction with their current jobs go up; at the same time, there's a decrease % of people indicating that they are "actively looking for a new opportunity". This finding shows that focusing on increasing satisfaction among current employees will help decrease churn. 
+3. In order to assess whether increasing pay would help increase satisfaction, I ran a logistic regression with several control veriables. The dependent variable is labeled as "1" for "very satisfied" and "0" for any other cases (i.e. slightly satisfied, neutral, slightly unsatisfied and very unsatisfied". With variables like "years of experience", "whether they are hobby coders", "company size" and more, we can better establish the relationship between total pay and satisfaction rate. The coefficient of the regression shows that there's no clear relationship between total pay and satisfaction ratings. In fact, for every 10K increase in total pay, the odds of being "very satisfied" instead of otherwise only increases for 1.2%, ceteis paribus. This shows that if companies want to retain current data talents, they need to do more than just raising the pay. 
